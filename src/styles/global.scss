@@ -1,0 +1,21 @@
+@use "./colors" as colors;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  transition: ease 0.5s;
+}
+
+:root {
+  background: colors.$white-bg-color;
+  color: colors.$text-dark-color;
+
+  &.dark {
+    background: colors.$dark-bg-color;
+    color: colors.$text-white-color;
+  }
+}
